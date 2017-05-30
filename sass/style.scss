@@ -1,0 +1,126 @@
+@import "reset";
+@import "fonts";
+
+@mixin contenedor{
+    width:1100px;
+    margin: auto;
+}
+header{
+	div{
+		nav{
+			@include contenedor;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 50px;
+			ul{
+				display: flex;
+				li{
+				font-family: $fuentedos;
+				font-size: 16px;
+				font-weight: 300;
+				color: black;
+				padding-right: 40px;
+					a{
+						text-decoration: none;
+						border-bottom: 2px solid rgba(0,0,0,0);
+						padding-bottom: 10px;
+						&:hover{
+							border-bottom: 2px solid black;
+						}
+					}
+				}
+			}
+			
+		}
+
+
+	}
+
+	.primero{
+		margin-top: 110px;
+		h4{
+			font-family: $fuentedos;
+			font-size: 19px;
+			color: black;
+			font-weight: 400;
+			
+			&:before{
+				height: 1px;
+			    background-color:black;
+			    width:280px;
+			    display: inline-block;
+			    content: '';
+			    position: relative;
+			    bottom:5px;
+			    right: 20px;
+
+			}
+		}
+		.color-fondo{
+			position: relative;
+			background-color:#F2F2F2;
+			margin-top: 150px;
+    		height: 580px;
+			}
+		.portada{
+			@include contenedor;
+			position:relative;
+			bottom: 655px;
+			margin:auto;
+			max-width: 1017px;
+
+		}
+		.encabezado{
+			@include contenedor;
+			position: relative;
+    		bottom: 1049px;
+    		text-align: center;
+			h6{
+				font-weight: 100;
+				font-size: 20px;
+				color: white;
+				margin-bottom: 0;
+				font-family: $fuentedos;
+			}
+			.linea_blanca{
+				width: 600px;
+				height: 2px;
+			    background-color:white;
+			    display: inline-block;
+			}
+			h1{
+				font-size: 45px;
+				font-weight: 900;
+				text-transform: uppercase;
+				color: white;
+				margin-top: 10px;
+				font-family: $fuenteuno;
+			}	
+		}
+	
+	}
+}
+
+section{
+	@include contenedor;
+	div{
+		position:relative;
+		h4{
+			font-family: $fuentedos;
+			font-size: 19px;
+			color: black;
+			font-weight: 400;
+		}
+
+		p{
+			font-family: $fuentedos;
+			font-size: 16px;
+			color: black;
+			font-weight: 300;
+
+		}
+
+	}
+
+}
